@@ -39,6 +39,8 @@
                 <input id="day-input" type="number" name="day-of-birth" placeholder="dd" value="" required>
            </label>
 
+           <br><br>
+
            <label for="gender">
                Select your gender:
 
@@ -46,10 +48,24 @@
                <input type="radio" name="gender" id="male-input" value="male" required>
 
                Female
-               <input type="radio" name="gender" id="female-input" value="female">
+               <input type="radio" name="gender" id="female-input" value="female" required>
            </label>
 
+           <br><br>
+
+           <input type="submit" value="Generate name" id="get-name" name="">
+
             </form>
+
+            <form onsubmit="return clearInput()">
+                
+                <input class="clear" type="submit" value="clear Input">
+            
+            </form>
+
+            <h4 id="display name"> <strong> Your Akan name is:</strong></h4>
+
+            <p id="result"></p>
 
         </div>
       </div>
